@@ -37,5 +37,8 @@
         <li>Level: <?php echo $row['Level'];?></li>
         <li>Password: <?php echo $row['Password'];?></li>
       </ul>
+      <div style="text-align:center">
+      <a href="人員資料.php" ><font size="5px">上一頁</font size></a>
+      </div>
   </body>
 </html>

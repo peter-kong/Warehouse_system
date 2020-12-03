@@ -38,6 +38,8 @@
                     echo "<tr>";
                     echo "<td>";
                     echo "<a href='庫存修改.php?item=" . $row['Item'] . "'>修改</a>";
+                    echo "/";
+                    echo "<a href='庫存調動.php?item=" . $row['Item'] . "'>查詢</a>";
                     echo "</td>";
                     echo "<td>" . $row["Item"] . "</td>";
                     echo "<td>" . $row["Quantity"] . "</td>";
@@ -53,6 +55,8 @@
       </tbody>
 
     </table>
-    <a href="管理員頁面.php">回到首頁</a>
+    <div style="text-align:center" >
+    <a href="/Warehouse%20system/管理者頁面.php" ><font size="5px">回到首頁</font size></a>
+  </div>
   </body>
 </html>

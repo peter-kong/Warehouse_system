@@ -45,6 +45,9 @@
          ?>
       </tbody>
     </table>
+    <div style="text-align:center" >
+    <a href="/Warehouse%20system/管理者頁面.php" ><font size="5px">回到首頁</font size></a>
+  </div>
   </div>
   </body>
 </html>
