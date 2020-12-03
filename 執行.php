@@ -24,11 +24,11 @@
     $change = $_POST['quantity'];
   else
     $change = $_POST['quantity'] * -1;
-    
+
   $sql2 = "INSERT INTO manage " .
     "(Purchase_time, Inventory_man_id, Item, Quantity)" .
     "VALUES ('$times', '$id', '$item', '$change')";
-    echo $sql2;
+    //echo $sql2;
 
   execute_query($database, $sql, $link);
   execute_query($database, $sql2, $link);

@@ -30,11 +30,17 @@
         border:2px blue dash;
         background-color:brown">
       </div>
+      <div>
       <input type="submit" value="註冊新帳號"
       onclick="javascript:location.href='Sign_in.php'"
-      style="font-size : 50px;width:1185px;height:250px;
+      style="font-size : 50px;width:590px;height:250px;
       border:2px blue dash;
       background-color:gold">
-
+      <input type="submit" value="登出"
+      onclick="javascript:location.href='Login.php'"
+      style="font-size : 50px;width:590px;height:250px;
+      border:2px blue dash;
+      background-color:gray">
+      </div>
   </body>
 </html>

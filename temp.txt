@@ -1,0 +1,12 @@
+$id = $_POST['pid'];
+$name = $_POST['name'];
+$sex = $_POST['sex'];
+$bdate = $_POST['bdate'];
+$phone = $_POST['phone'];
+$account = $_POST["email"];
+$address = $_POST['address'];
+$work_date = $_POST['work_date'];
+$work_time = $_POST['work_time'];
+$salary = $_POST['salary'];
+$level = $_POST['level'];
+$password = $_POST["password"];
