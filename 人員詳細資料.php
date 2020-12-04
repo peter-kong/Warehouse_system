@@ -39,6 +39,7 @@
       </ul>
       <div style="text-align:center">
       <a href="人員資料.php" ><font size="5px">上一頁</font size></a>
+      <a href="/Warehouse%20system/管理者頁面.php" ><font size="5px">回到首頁</font size></a>
       </div>
   </body>
 </html>

@@ -6,6 +6,8 @@
   </head>
   <body style="background-color:powderblue;" >
       <h1 style="text-align:center"><?php echo $_COOKIE['user'] ?>，歡迎</h1>
+      <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
+
       <div>
         <input type="submit" value="倉庫狀況"
         onclick="javascript:location.href='倉庫狀況.php'"
@@ -25,7 +27,7 @@
         border:2px blue dash;
         background-color:blue">
         <input type="submit" value="結帳"
-        onclick="javascript:location.href='Login.php'"
+        onclick="javascript:location.href='結帳頁面.php'"
         style="font-size : 50px;width:590px;height:250px;
         border:2px blue dash;
         background-color:brown">
@@ -42,5 +44,7 @@
       border:2px blue dash;
       background-color:gray">
       </div>
+      <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
+
   </body>
 </html>

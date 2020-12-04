@@ -58,7 +58,9 @@
     <div style="text-align:center" >
     <a href="/Warehouse%20system/新增品項頁面.php" ><font size="5px">新增品項</font size></a>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/Warehouse%20system/管理者頁面.php" ><font size="5px">回到首頁</font size></a>
+
+    <a href="<?php  if($_COOKIE["level"] == 3) echo "/Warehouse%20system/管理者頁面.php";
+                    else echo "/Warehouse%20system/員工頁面.php";?>" ><font size="5px">回到首頁</font size></a>
   </div>
   </body>
 </html>

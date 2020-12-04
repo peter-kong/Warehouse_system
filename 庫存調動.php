@@ -39,9 +39,14 @@
               echo '<td>';
               echo $row['Purchase_time'];
               echo '</td>';
-              echo '<td>';
-              echo $row['Inventory_man_id'];
-              echo '</td>';
+
+              $database = 'beverage store storage system';
+              $sql = "SELECT `Name` FROM people WHERE `Pid`='" . $row['Inventory_man_id'] . "'";
+              $link = create_connection();
+              $dbresult2 = execute_query($database, $sql, $link);
+
+              echo "<td>" . mysqli_fetch_array($dbresult2)['Name'] . "</td>";
+
               echo '<td>';
               echo $row['Quantity'];
               echo '</td>';

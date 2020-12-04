@@ -20,8 +20,9 @@
       while ($row = mysqli_fetch_array($dbresult)) {
         if($row[0] == $email and $row['Password'] == $password){
           $level = $row['Level'];
-          setcookie("user", $row['Name'], time()+3600);
-          setcookie("id", $row['Pid'], time()+3600);
+          setcookie("level", $row['Level'], time()+7200);
+          setcookie("user", $row['Name'], time()+7200);
+          setcookie("id", $row['Pid'], time()+7200);
 
           $result='成功了<br>';
           break;
