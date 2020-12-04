@@ -15,7 +15,7 @@
     <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><!---noshade无阴影的设定，为实心线段--->
     <br><br><br>
     <form style="font-size: 30px;text-align:center" method="post"
-    action=<?php echo "執行.php?item=" . $_GET['item'];?>>
+    action=<?php echo "庫存修改執行.php?item=" . $_GET['item'];?>>
       <label for="item">品項:<?php echo $_GET['item']; ?></label>
       &nbsp;
       <input type="radio" name="choose" id="buy" value="1" checked/>
@@ -27,5 +27,9 @@
       <input type="number" name="quantity" id="quantity"></input>
       <input type="submit" value="送出"/>
     </form>
+    <br><br>
+    <div  style="text-align:center">
+      <a href="倉庫狀況.php" ><font size="5px">上一頁</font size></a>
+    </div>
   </body>
 </html>

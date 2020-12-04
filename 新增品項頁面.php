@@ -16,7 +16,7 @@
     $save_time = $_POST['save_time'];
     $unit_price = $_POST['unit_price'];
     $time = $_POST['date'];
-    $man = $_POST['man'];
+    $man = $_COOKIE['id'];
 
     if(empty($item)){
       $error = '品項不能為空';
@@ -32,8 +32,6 @@
       $error = '單位價格不能為空';
     else if(empty($time))
       $error = '補貨時間不能為空';
-    else if(empty($man))
-      $error = '補貨員ID不能為空';
 
     else{
       include_once ("dbtools.inc.php");
@@ -107,10 +105,6 @@
       <label for="unit_price">單位價錢(公斤):</label>
       <input type="number" name="unit_price" id='unit_price'
         value="<?php  echo $unit_price ?>"/>
-      <br><br>
-      <label for="man">補貨人ID:</label>
-      <input type="text" name="man" id='man'
-        value="<?php  echo $man ?>"/>
       <br><br>
       <label for="date">補貨日期:</label>
       <input type="date" name="date" id='date'
