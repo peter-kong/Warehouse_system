@@ -49,6 +49,8 @@
         </tr>
       </tbody>
     </table>
+    <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
+
     <br>
     <div style='text-align:center'>
     <a href=新增結帳.php><font size="5px">新增結帳</font size></a>
