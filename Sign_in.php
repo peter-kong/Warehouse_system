@@ -3,7 +3,11 @@
   include_once ('dbtools.inc.php');
 
   $error = '';
-  if(isset($_POST["send"])){
+
+  if(isset($_POST['homepage']))
+    header('Location:管理者頁面.php');
+  else if(isset($_POST["send"])){
+
     $id = $_POST['pid'];
     $name = $_POST['name'];
     $sex = $_POST['sex'];
@@ -16,11 +20,29 @@
     $level = $_POST['level'];
     $password = $_POST["password"];
 
-    if(empty($account)){
-      $error = '帳號不能為空';
-    }else if(empty($password)){
+    if(empty($id)){
+      $error = 'ID不能為空';
+    }else if(empty($name)){
+      $error = '名字不能為空';
+    }else if(empty($sex)){
+      $error = '性別不能為空';
+    }else if(empty($bdate)){
+      $error = '生日不能為空';
+    }else if(empty($phone))
+      $error = '聯絡電話不能為空';
+    else if(empty($account))
+      $error = 'E-mail 不能為空';
+    else if(empty($address))
+      $error = '通訊地址不能為空';
+    else if(empty($work_date))
+      $error = '工作開始不能為空';
+    else if(empty($salary))
+      $error = '不能不給薪水';
+    else if(empty($level))
+      $error = '帳號等級不能為空';
+    else if(empty($password) AND $password != '0')
       $error = '密碼不能為空';
-    }else{
+    else{
       $database = 'beverage store storage system';
       $sql = 'INSERT INTO people' .
       "(Pid, Name, Sex, Bdate, Phone, Email, Address,
@@ -105,9 +127,13 @@
       <label for="password">設定密碼:</label>
       <input type="password" name="password" id='password'
         value="<?php  echo $password ?>"/>
-      <br/><hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
+      <br/><hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><!---noshade无阴影的设定，为实心线段--->
+      <div style="color:red" ><?php echo $error ?></div>
 
-      <input type="submit" name="send" value="送出" />
+      <div>
+        <input type="submit" name="send" value="送出" />
+        <input type="submit" name="homepage" value="上一頁" />
+      </div>
     </form>
   </body>
 </html>

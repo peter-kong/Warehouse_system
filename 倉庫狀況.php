@@ -24,7 +24,7 @@
           <tr>
             <td>操作</td>
             <td>物品</td>
-            <td>數量</td>
+            <td>數量(公斤)</td>
             <td>保存期限</td>
             <td>進貨廠商</td>
             <td>廠商電話</td>
@@ -56,6 +56,8 @@
 
     </table>
     <div style="text-align:center" >
+    <a href="/Warehouse%20system/新增品項頁面.php" ><font size="5px">新增品項</font size></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="/Warehouse%20system/管理者頁面.php" ><font size="5px">回到首頁</font size></a>
   </div>
   </body>
