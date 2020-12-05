@@ -22,6 +22,7 @@
     <table border="1" style="text-align:center" width="100%">
       <thead>
         <tr>
+          <td>操作</td>
           <td>日期</td>
           <td>金額</td>
           <td>收帳ID</td>
@@ -33,6 +34,7 @@
           <?php
             while($row = mysqli_fetch_array($dbresult)){
               echo "<tr>";
+              echo "<td>" . "<a href='修改結帳金額.php?date=". $row['Date'] . "'>" . "修改金額</a>" . "</td>";
               echo "<td>" . $row['Date'] . "</td>";
               echo "<td>" . $row['Amount'] . "</td>";
               echo "<td>" . $row['Checkout_man_id'] . "</td>";

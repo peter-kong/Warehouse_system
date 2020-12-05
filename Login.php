@@ -67,7 +67,7 @@
           value="<?php echo $email; ?>" />
 
       </div>
-      <div >
+      <div>
         <label for="password">密碼:</label>
         <input type="password" name="password" id="password"
           value="<?php echo $password; ?>" />
@@ -91,7 +91,7 @@
     <div>
       <b>~~關於本系統~~</b><br><br>
       有兩個角色:老闆、員工<br><br>
-      老闆可以使用: 倉庫狀況、人員薪資、班表、結帳<br><br>
+      老闆可以使用: 倉庫狀況、人員薪資、班表、結帳、創辦帳號<br><br>
       員工可以使用: 倉庫狀況、班表、結帳<br><br>
       依照不同權限有對不同功能模組有不同操作方法<br>
       詳情請見報告或親自操作<br><br>
