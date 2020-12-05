@@ -14,7 +14,7 @@
           border:2px blue dash;
           background-color:pink">
           <input type="submit" value="班表"
-          onclick="javascript:location.href='Login.php'"
+          onclick="javascript:location.href='Download.php?filename=班表.txt'"
           style="font-size : 50px;width:595px;height:250px;
           border:2px blue dash;
           background-color:blue">
