@@ -40,6 +40,8 @@
                     echo "<a href='庫存修改.php?item=" . $row['Item'] . "'>修改</a>";
                     echo "/";
                     echo "<a href='庫存調動.php?item=" . $row['Item'] . "'>查詢</a>";
+                    echo "/";
+                    echo "<a href='庫存刪除.php?item=" . $row['Item'] . "'>刪除</a>";
                     echo "</td>";
                     echo "<td>" . $row["Item"] . "</td>";
                     echo "<td>" . $row["Quantity"] . "</td>";

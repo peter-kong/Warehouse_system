@@ -115,8 +115,8 @@
       <div>
         <input type="submit" name="send" value="送出" />
         <input type="submit" name="backpage" value="上一頁" />
-        <input type="submit" name="homepage" value="管理者頁面" />
-
+        <!---<input type="submit" name="homepage" value="管理者頁面" />
+        --->
       </div>
     </form>
 

@@ -22,8 +22,12 @@
       "(Checkout_man_id, Amount, Date)" .
       "VALUES('$checkout_man_id', '$amount', '$date')";
       //echo $sql;
+      $sql2 = 'INSERT INTO checkout' .
+      "(Date, Amount)" .
+      "VALUES('$date', '$amount')";
       $link = create_connection();
       execute_query($database, $sql, $link);
+      execute_query($database, $sql2, $link);
       header('Location: 結帳頁面.php');
       exit;
 

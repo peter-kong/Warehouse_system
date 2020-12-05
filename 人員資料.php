@@ -22,8 +22,9 @@
     <table border="2" style="width:100%" >
       <thead  align='center' valign="middle">
         <tr>
-          <td >編號</td>
+          <td>編號</td>
           <td>姓名</td>
+          <td>操作</td>
         </tr>
       </thead>
       <tbody  align='center' valign="middle">
@@ -38,6 +39,13 @@
             echo "</td>";
             echo "<td>";
             echo $row['Name'];
+            echo "</td>";
+            echo "<td>";
+            echo "<a href='人員目錄修改.php?id=". $id . "'>修改</a>";
+            echo "/";
+            echo "<a href='人員目錄刪除.php?id=" . $id . "'>";
+            echo "刪除";
+            echo "</a>";
             echo "</td>";
             echo "</tr>";
           }
