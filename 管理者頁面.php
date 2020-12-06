@@ -44,7 +44,7 @@
       border:2px blue dash;
       background-color:gray">
       </div>
-      <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
+      <br><hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><!---noshade无阴影的设定，为实心线段--->
 
   </body>
 </html>

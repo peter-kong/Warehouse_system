@@ -79,7 +79,7 @@
     </form>
     <br/>
     <div style="text-align:center;" >
-    <a href="pass_forget.php">忘記密碼?</a>
+    <a href="忘記密碼.php">忘記密碼?</a>
     &nbsp;&nbsp;
     <!---<a href="Sign_in.php" >註冊新帳號</a>--->
 

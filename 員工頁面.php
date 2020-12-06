@@ -6,6 +6,7 @@
   </head>
   <body style="background-color:powderblue;">
       <h1 style="text-align:center"><?php echo $_COOKIE['user'] ?>，歡迎</h1>
+      <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
 
         <div>
           <input type="submit" value="倉庫狀況"
@@ -31,5 +32,7 @@
           border:2px blue dash;
           background-color:gray">
         </div>
+        <br><hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><!---noshade无阴影的设定，为实心线段--->
+
   </body>
 </html>
