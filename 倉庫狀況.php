@@ -41,7 +41,7 @@
                     echo "/";
                     echo "<a href='庫存調動.php?item=" . $row['Item'] . "'>查詢</a>";
                     echo "/";
-                    echo "<a href='庫存刪除.php?item=" . $row['Item'] . "'>刪除</a>";
+                    echo "<a href='庫存刪除.php?item=" . $row['Item'] . "' onClick=\"return confirm('是否確認刪除這筆資料');\">刪除</a>";
                     echo "</td>";
                     echo "<td>" . $row["Item"] . "</td>";
                     echo "<td>" . $row["Quantity"] . "</td>";

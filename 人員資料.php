@@ -43,7 +43,7 @@
             echo "<td>";
             echo "<a href='人員目錄修改.php?id=". $id . "'>修改</a>";
             echo "/";
-            echo "<a href='人員目錄刪除.php?id=" . $id . "'>";
+            echo "<a href='人員目錄刪除.php?id=" . $id . "' onClick=\"return confirm('是否確認刪除這筆資料');\">";
             echo "刪除";
             echo "</a>";
             echo "</td>";

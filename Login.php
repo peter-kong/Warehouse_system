@@ -56,7 +56,7 @@
     <title>飲料店管理系統</title>
   </head>
   <body style="background-color:powderblue;">
-    <h1 style="text-align:center;">登入</h1>
+    <h1 style="text-align:center;">飲料店管理系統</h1>
 
     <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><br><!---noshade无阴影的设定，为实心线段--->
 
@@ -91,8 +91,8 @@
     <div>
       <b>~~關於本系統~~</b><br><br>
       有兩個角色:老闆、員工<br><br>
-      老闆可以使用: 倉庫狀況、人員薪資、班表、結帳、創辦帳號<br><br>
-      員工可以使用: 倉庫狀況、班表、結帳<br><br>
+      老闆可以使用: 倉庫狀況、人員薪資、班表、結帳、創辦帳號與聊天室功能<br><br>
+      員工可以使用: 倉庫狀況、班表、結帳與聊天室功能<br><br>
       依照不同權限有對不同功能模組有不同操作方法<br>
       詳情請見報告或親自操作<br><br>
 
@@ -101,7 +101,7 @@
 
       &nbsp;&nbsp;&nbsp;&nbsp;員工帳號:410777888@gmail.com<br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;員工密碼:0<br><br>
-
+      <a href="聊天室.php">123</a>
     </div>
 
   </body>

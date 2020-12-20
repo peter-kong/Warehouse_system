@@ -1,4 +1,7 @@
 <?php
+
+
+
   include('dbtools.inc.php');
   $link = create_connection();
   $database = 'beverage store storage system';

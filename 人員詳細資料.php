@@ -32,7 +32,7 @@
         <li>E-mail: <?php echo $row['Email'];?></li>
         <li>Address: <?php echo $row['Address'];?></li>
         <li>Wrok_day: <?php echo $row['Work_date'];?></li>
-        <li>Period: <?php echo $row['Work_time'];?></li>
+        <li>Period: <?php echo (strtotime(date("Y-m-d")) - strtotime($row['Work_date']))/(60*60*24);?> 天</li>
         <li>Salary: <?php echo $row['Salary'];?></li>
         <li>Level: <?php echo $row['Level'];?></li>
         <li>Password: <?php echo $row['Password'];?></li>

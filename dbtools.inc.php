@@ -1,6 +1,6 @@
 <?php
   function create_connection(){
-    $link = mysqli_connect("localhost", "peter", "zxc123") or
+    $link = mysqli_connect("localhost", "peter", "xxxxxx") or
       die("無法連接資料庫<br><br>" . mysqli_error());
     //mysql_query("SET NAMES utf8");
     return $link;
