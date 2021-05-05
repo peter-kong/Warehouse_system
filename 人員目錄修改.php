@@ -73,18 +73,26 @@
       header('Location:管理者頁面.php');
 
   }else{
-    $id = '';
-    $name = '';
-    $sex = '';
-    $bdate = '';
-    $phone = '';
-    $account = '';
-    $address = '';
-    $work_date = '';
-    $work_time = '';
-    $salary = '';
-    $level = '';
-    $password = '';
+
+    $database = 'beverage store storage system';
+    $sql = "SELECT `Name`, `Sex`, `Bdate`, `Phone`, `Email`, `Address`, `Work_date`, `Salary`, `Level`, `Password`
+     FROM people WHERE Pid='" . $_GET['id'] . "'";
+    $link = create_connection();
+    $dbresult = execute_query($database, $sql, $link);
+    $row = mysqli_fetch_array($dbresult);
+
+
+    $id = $_GET['id'];
+    $name = $row['Name'];
+    $sex = $row['Sex'];
+    $bdate = $row['Bdate'];
+    $phone = $row['Phone'];
+    $account = $row['Email'];
+    $address = $row['Address'];
+    $work_date = $row['Work_date'];
+    $salary = $row['Salary'];
+    $level = $row['Level'];
+    $password = $row['Password'];
   }
  ?>
 
@@ -92,10 +100,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>註冊</title>
+    <title>修改</title>
   </head>
   <body style="background-color:powderblue;">
-    <h1 style="text-align:center" >註冊新帳號</h1>
+    <h1 style="text-align:center" >修改帳號</h1>
     <hr SIZE=5  ALIGN=LEFT NOSHADE color="#8E8E8E"><!---noshade无阴影的设定，为实心线段--->
 
     <form method="post" action="" style="text-align:center;">

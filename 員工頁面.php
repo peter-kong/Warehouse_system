@@ -21,7 +21,7 @@
           background-color:blue">
         </div>
         <div>
-          <input type="submit" value="結帳"
+          <input type="submit" value="清帳"
           onclick="javascript:location.href='結帳頁面.php'"
           style="font-size : 50px;width:595px;height:250px;
           border:2px blue dash;

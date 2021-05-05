@@ -52,9 +52,10 @@
       '$salary', '$level', '$password')";
       $link = create_connection();
       $dbresult = execute_query($database, $sql, $link);
-      //free($db)
-      echo $sql;
-      header('Location:管理者頁面.php');    }
+      if($dbresult == false)
+        $error =  "帳號存在或有其他錯誤";
+      else
+        header('Location:管理者頁面.php');    }
 
   }else{
     $id = '';

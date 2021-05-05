@@ -8,7 +8,12 @@
   }else if(isset($_POST['delete'])){
     include("dbtools.inc.php");
     $database="beverage store storage system";
-    $sql = "DELETE FROM chat_room";
+
+    if($_COOKIE['level'] == 2)
+      $sql = "DELETE FROM chat_room WHERE Sid='" . $_COOKIE['id'] ."'";
+    else{
+      $sql = "DELETE  FROM chat_room";
+    }
     $link = create_connection();
     $dbresult = execute_query($database, $sql, $link);
     if(!$dbresult)echo mysqli_error($link);

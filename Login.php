@@ -101,7 +101,6 @@
 
       &nbsp;&nbsp;&nbsp;&nbsp;員工帳號:410777888@gmail.com<br><br>
       &nbsp;&nbsp;&nbsp;&nbsp;員工密碼:0<br><br>
-      <a href="聊天室.php">123</a>
     </div>
 
   </body>

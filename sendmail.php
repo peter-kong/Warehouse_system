@@ -8,8 +8,8 @@
     $mail->Host = "smtp.gmail.com"; //Gamil的SMTP主機
     $mail->Port = 465; //Gamil的SMTP主機的SMTP埠位為465埠。
     $mail->CharSet = "utf-8"; //設定郵件編碼
-    $mail->Username = "peterpeter031053@gmail.com"; //設定google eamil帳號
-    $mail->Password = "xxxxxxxxx"; //設定google eamil密碼
+    $mail->Username = "zhuantiziliaokushiyong@gmail.com"; //設定google eamil帳號
+    $mail->Password = "boss5678"; //設定google eamil密碼
     $mail->From = "peterpeter031053@gmail.com"; //設定寄件者信箱
     $mail->FromName = "老闆"; //設定寄件者姓名
     $mail->Subject = "忘記密碼"; //設定郵件標題
